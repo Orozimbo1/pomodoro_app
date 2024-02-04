@@ -4,12 +4,14 @@ import PomodoroTimer from './components/PomodoroTimer.jsx'
 function App(): JSX.Element {
 
   return (
-    <>
-      <h1>Ola</h1>
+    <div className='container'>
       <PomodoroTimer
-        defaultPomodoroTime={1500}
+        pomodoroTime={1500}
+        shortRestTime={300}
+        longRestTime={900}
+        cycles={4}
       />
-    </>
+    </div>
   )
 }
 
